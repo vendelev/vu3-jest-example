@@ -4,6 +4,7 @@ import { ref } from 'vue'
 import TestWorld from "@/components/TestWorld.vue";
 
 import Vue3Datatable from "@bhplugin/vue3-datatable";
+import "@bhplugin/vue3-datatable/dist/style.css";
 
 const cols = ref([
   { field: "id", title: "ID", width: "90px", filter: false },
