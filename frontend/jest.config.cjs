@@ -9,7 +9,11 @@ module.exports = {
     testRegex: "(/__tests__/.*|(\\.|/)(test|spec))\\.(js|ts)$",
     moduleFileExtensions: ["vue", "js"],
     moduleNameMapper: {
-        "^@/(.*)$": "<rootDir>/src/$1"
+        "^@/(.*)$": "<rootDir>/src/$1",
+        "^@bhplugin/vue3-datatable$": path.join(
+            __dirname,
+            "node_modules/@bhplugin/vue3-datatable/dist/vue3-datatable.cjs"
+          ),
     },
     coveragePathIgnorePatterns: ["/node_modules/", "/tests/"],
     coverageReporters: ["text", "json-summary"],
