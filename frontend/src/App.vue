@@ -1,5 +1,6 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
+import "@bhplugin/vue3-datatable/dist/style.css";
 </script>
 
 <template>
